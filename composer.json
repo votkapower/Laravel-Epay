@@ -13,9 +13,8 @@
             "Kondov\\EpayWrapper\\": "src/"
         }
     },
-    "minimum-stability": "stable",
     "require": {
-        "illuminate/support": "~5"
+        "illuminate/support": "~5.1"
     },
     "extra": {
         "branch-alias": {
