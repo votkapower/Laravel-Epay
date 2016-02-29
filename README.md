@@ -1,4 +1,4 @@
-# Laravel-ePay.bg-Package
+# Laravel ePay.bg API Wrapper
 
 A Laravel package that wraps ePay.bg's API.
 
