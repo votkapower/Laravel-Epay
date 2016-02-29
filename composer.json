@@ -3,7 +3,7 @@
     "description": "Package that wraps ePay.bg's API and provides it's basic functionality",
     "homepage": "https://github.com/AlexKondov/Laravel-Epay",
     "license": "MIT",
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "authors": [
         {
             "name": "Alex Kondov",
