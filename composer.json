@@ -1,0 +1,25 @@
+{
+    "name": "kondov/epaywrapper",
+    "description": "Package that wraps ePay.bg's API and provides it's basic functionality",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alex Kondov",
+            "email": "alexkondov38@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Kondov\\EpayWrapper\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "illuminate/support": "~5"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
