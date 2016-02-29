@@ -1,6 +1,7 @@
 {
     "name": "kondov/epaywrapper",
     "description": "Package that wraps ePay.bg's API and provides it's basic functionality",
+    "homepage": "https://github.com/AlexKondov/Laravel-Epay",
     "license": "MIT",
     "authors": [
         {
@@ -8,17 +9,13 @@
             "email": "alexkondov38@gmail.com"
         }
     ],
+    "require": {
+        "illuminate/support": "~5.1",
+        "php" : ">=5.3.0"
+    },
     "autoload": {
         "psr-4": {
-            "Kondov\\EpayWrapper\\": "src/"
-        }
-    },
-    "require": {
-        "illuminate/support": "~5.1"
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "1.0.x-dev"
+            "Kondov\\EpayWrapper\\": "src"
         }
     }
 }
