@@ -14,17 +14,9 @@ A Laravel package that wraps ePay.bg's API.
          * Application Service Providers...
          */
 	</pre>
-2. Add the package to your composer.json file in the root directory of your project
+2. Add the facade to the aliases array in app.php
 	<pre>
-		"autoload": {
-	        "classmap": [
-	            "database"
-	        ],
-	        "psr-4": {
-	            "App\\": "app/",
-	            "Kondov\\EpayWrapper\\": "packages/Kondov/EpayWrapper/src"
-	        }
-	    },
+		'Epay'      => Kondov\EpayWrapper\Facades\Epay::class
 	</pre>
 3. Set up your merchant information in the config.php file in the package
 	<pre>
