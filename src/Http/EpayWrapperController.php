@@ -26,6 +26,19 @@ class EpayWrapperController extends Controller {
      * @return mixed
      */
     public function sendRequest(Request $request) {
+        //Validate input and redirect back if there are errors
+        $v = \Validator::make($request->all(), [
+            'INVOICE' => 'required',
+            'AMOUNT' => 'required|numeric',
+            'EXP_TIME' => 'required',
+            'DESCR' => 'required' 
+        ]);
+
+        if ($v->fails()) {
+            return redirect()->back();
+        }
+
+
         $order = $request->input();
         //Remove the CRSF token's value from the array
         unset($order['_token']);
